@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 <div class="container">
   <a class="navbar-brand" href="{{ url('/') }}">
       {{ config('app.name', 'Laravel') }}
@@ -24,8 +24,8 @@
           <!-- Authentication Links -->
           @guest
            
-              <li><a class="dropdown-item" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-              <li><a class="dropdown-item" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+              <li class="nav-item"><a class="dropdown-item nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+              <li class="nav-item"><a class="dropdown-item nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
           @else
               <li class="nav-item dropdown">
                    
