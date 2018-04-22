@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <a href="/posts" class="btn btn-default">Go Back</a>
+    <a class="btn btn-default" href="/posts" >Go Back</a>
     <h1>{{$post->title}}</h1>
     <div>
             <img class="img-fluid" style="width:100%" src="/storage/cover_images/{{$post->cover_image}}" alt="">
